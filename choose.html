@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Services</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.why-choose-us {
+    background-color: #dff5ff;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+}
+
+.circle-container {
+  width: 302px;
+  height: 302px;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.background-image {
+ width: 414px;
+ height: 297px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.foreground-image {
+    width: 259px;
+  height: 266px;
+  object-fit: cover;
+  position: relative;
+  z-index: 1;
+  margin-left: 45px;
+  margin-top: 12px;
+}
+
+
+
+.info {
+    margin-left: 50px;
+}
+
+.info h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #222;
+    margin-left: 50px;
+}
+
+.info p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #0a0a0a;
+    line-height: 1.6;
+    margin-left: 50px;
+}
+
+.options {
+    margin-bottom: 30px;
+    margin-left: 50px;
+    width: 650px;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+/*.option:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}*/
+
+.icon img {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+.text h3 {
+    font-size: 22px;
+    margin: 0;
+    color: #222;
+}
+
+.text p {
+    font-size: 14px;
+    font-weight: 1px;
+    color: #0b8c93;
+    margin: 10px 2px 8px;
+}
+
+.another-product {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #0e0f0f;
+    font-weight: bold;
+  margin-left: 50px;
+}
+    </style>
+</head>
+<body>
+    <section class="why-choose-us">
+        <div class="content">
+            <div class="circle-container">
+                <img src="backim.png" alt="Background Image" class="background-image">
+                <img src="Mask group.png" alt="Foreground Image" class="foreground-image">
+              </div>
+              
+              
+            <div class="info">
+                <h2>Why choose Us</h2>
+                <p>Enjoy Different Experiences In every place you visit and discover new and <br>affordable adventures of course.</p>
+                <div class="options">
+                    <a href="#" class="option">
+                        <div class="icon"><img src="https://cdn-icons-png.freepik.com/512/6677/6677649.png" alt="Train Icon"></div>
+                        <div class="text">
+                            <h3>Train Ticket</h3>
+                            <p>"Discover the Pinnacle: Popular Destinations, Where Magic Meets Reality."</p>
+                        </div>
+                    </a>
+                    <a href="#" class="option">
+                        <div class="icon"><img src="https://toppng.com/uploads/preview/hotel-png-11554023586bxswzk556g.png" alt="Hotel Icon"></div>
+                        <div class="text">
+                            <h3>Hotel</h3>
+                            <p>"Discover the Pinnacle: Popular Destinations, Where Magic Meets Reality."</p>
+                        </div>
+                    </a>
+                    <a href="#" class="option">
+                        <div class="icon"><img src="https://img.freepik.com/premium-vector/travel-bag-packages-location-icon-traveling-banner-template-vector-illustration_660702-36.jpg" alt="Package Tour Icon"></div>
+                        <div class="text">
+                            <h3>Packaged Tour</h3>
+                            <p>"Discover the Pinnacle: Popular Destinations, Where Magic Meets Reality."</p>
+                        </div>
+                    </a>
+                </div>
+                <a href="#" class="another-product">Another Product ></a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,162 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: linear-gradient(to bottom, #0383d8, #337ef6);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.form-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 350px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.form-box h1 {
+    color: #fff;
+    margin-bottom: 30px;
+    font-size: 2em;
+    animation: slideIn 1.2s ease-in-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 1px;
+    outline: none;
+    transition: 0.3s ease;
+    animation: inputFadeIn 1.5s ease-in-out;
+}
+
+@keyframes inputFadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    color: #fff;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.3s ease;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+    top: -10px;
+    left: 15px;
+    color: #ff7eb3;
+    font-size: 12px;
+}
+
+.input-box input:focus {
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 5px #ff7eb3, 0 0 10px #ff7eb3;
+}
+
+.signup-btn {
+    background: #ff7eb3;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    margin-bottom: 20px;
+    animation: btnFadeIn 1.8s ease-in-out;
+}
+
+@keyframes btnFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.signup-btn:hover {
+    background: #75b8ff;
+    box-shadow: 0 0 10px #ff7eb3, 0 0 20px #ff7eb3;
+}
+
+.signin-link {
+    color: #fff;
+    font-size: 14px;
+}
+
+.signin-link a {
+    color: #ff7eb3;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.signin-link a:hover {
+    color: #ff758c;
+}

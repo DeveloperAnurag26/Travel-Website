@@ -1,0 +1,490 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #dff5ff;
+    animation: fadeInBody 1s ease-in-out;
+}
+/* styles.css */
+
+.login-button{
+
+    border-radius: 10px;
+    background-color: rgb(86, 34, 255);
+}
+
+
+@keyframes fadeInBody {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+.btnmine{
+
+    padding: 12px 25px;
+    background-color: #ff4400;
+    color: #fefeff;
+    margin-top: -10px;
+    border-radius: 15px;
+    font-size: medium;
+    font-weight: bold;
+}
+.btnmine:hover{
+    background-color: #00BFFF;
+}
+
+
+.btn{
+    padding: 12px 25px;
+    background-color: #00BFFF;
+    color: #fefeff;
+    margin-top: -10px;
+    border-radius: 15px;
+    font-size: medium;
+    font-weight: bold;
+}
+.btn:hover{
+    background-color: rgb(0, 123, 255);
+}
+.mybtn:hover{
+    background-color: #00BFFF;
+}
+.mbtn{
+    padding: 12px 25px;
+    background-color: #f2f6ff;
+    color: #fefeff;
+    margin-top: -10px;
+    border-radius: 15px;
+    font-size: medium;
+    font-weight: bold;
+
+}
+.mbtn:hover{
+    background-color: #1acce4;
+}
+.Hbtn{
+    padding: 12px 25px;
+    background-color: #008cff;
+    color: #fefeff;
+    margin-top: -10px;
+    border-radius: 15px;
+    font-size: medium;
+    font-weight: bold;
+}
+.Hbtn:hover{
+    background-color: orangered;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #dff5ff;
+    color: rgb(0, 0, 0);
+    animation: slideDown 1s ease-in-out;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+   
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .nav-links li a {
+    color: rgb(5, 2, 2);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: medium;
+    animation: fadeInNav 2s ease-in-out;
+}
+
+@keyframes fadeInNav {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the content horizontally */
+    padding: 120px;
+    background-color: #dff5ff;
+    animation: fadeInHero 1s ease-in-out;
+}
+
+@keyframes fadeInHero {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.hero-text {
+    max-width: 50%;
+    animation: fadeInText 2s ease-in-out;
+}
+
+@keyframes fadeInText {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 20px;
+    animation: bounceText 2s ease-in-out infinite;
+}
+
+@keyframes bounceText {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.hero-text p {
+    font-size: 18px;
+    color: #030304;
+    margin-bottom: 30px;
+    font-weight: bold;
+    animation: fadeInParagraph 2.5s ease-in-out;
+}
+
+@keyframes fadeInParagraph {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.cta-button {
+    padding: 15px 30px;
+    background-color: #1acce4;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    font-size: medium;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #ea5606;
+}
+
+.hero-image {
+    position: relative;
+    display: flex; /* Add this line to use flexbox */
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+}
+
+.hero-image .circle-image {
+    width: 600px; /* Adjust size as needed */
+    height: 600px; /* Adjust size as needed */
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex; /* Use flexbox to center the image */
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-image .circle-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the circle */
+    object-position: center; /* Center the image within the circle */
+    border-radius: 50%;
+}
+
+.hero-image .light-animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 60%);
+    animation: moveLights 5s infinite linear;
+}
+
+@keyframes glow {
+    from {
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.4), 0 0 30px rgba(255, 0, 255, 0.3), 0 0 40px rgba(255, 0, 255, 0.2);
+    }
+    to {
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.8), 0 0 40px rgba(255, 255, 255, 0.7), 0 0 60px rgba(255, 0, 255, 0.5), 0 0 80px rgba(255, 0, 255, 0.4);
+    }
+}
+
+@keyframes moveLights {
+    0% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(50px, 50px);
+    }
+    50% {
+        transform: translate(100px, 0);
+    }
+    75% {
+        transform: translate(50px, -50px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.explore {
+    padding: 50px;
+    background-color: #dff5ff;
+    text-align: center;
+}
+
+.destination-grid {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.destination {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.destination img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.destination h3 {
+    margin-top: 10px;
+    color: #333;
+}
+
+.destination:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px;
+}
+
+/*  add footer from here */
+/* General Footer Styling */
+footer {
+    background-image: url("Group 16.png");
+    background-size: cover; /* Ensures the image covers the entire footer */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    color: #fff;
+    font-family: Arial, sans-serif;
+    padding: 50px 80px;
+}
+
+/* Middle Section of Footer */
+.footer-middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 310px; /* Reduced height */
+}
+
+/* Content Box */
+.content-box {
+    width: 1250px;
+    border: 1px solid white;
+    padding: 20px; /* Increased padding for better spacing */
+    display: flex; /* Flex container to arrange text and buttons side by side */
+    justify-content: space-between; /* Space between text and buttons */
+    align-items: center; /* Vertically center align */
+    border-radius: 2%;
+    background:  #42A7C3/* Optional: Add semi-transparent background for better text visibility */
+}
+
+/* Text Content */
+.text-content {
+    /* No additional styling needed unless specific adjustments are required */
+}
+
+/* Small Text */
+.small-text {
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Bold Text */
+.bold-text {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+/* Authentication Buttons */
+.auth-buttons {
+    display: flex;
+    flex-direction: column; /* Arrange buttons vertically */
+    align-items: center;
+    gap: 15px; /* Space between buttons */
+}
+
+.auth-buttons button {
+    background-color: #00BFFF;
+    border: none;
+    border-radius: 13px;
+    padding: 10px 30px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 200px; /* Ensures the buttons have equal width */
+   
+}
+
+.auth-buttons .sign-up {
+    background-color: #fff;
+    color: #42A7C3;
+}
+
+.auth-buttons button:hover {
+    opacity: 0.8; /* Simple hover effect */
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+    padding: 20px 200px;
+}
+
+/* Footer Links */
+.footer-links {
+    text-align: left;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin: 0 10px;
+    font-size: 12px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline; /* Optional: Add hover effect for links */
+}
+
+/* Horizontal Line */
+hr {
+    border-top: 1px solid #fff;
+    margin: 25px 0;
+    width: 100%; /* Corrected to 100% */
+}
+
+/* Footer Bottom Row */
+.footer-bottom-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Corrected from 'left' to 'center' */
+}
+
+/* Copyright */
+.copyright {
+    font-size: 16px;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    gap: 10px; /* Increased gap for better spacing */
+}
+
+.social-icons a {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 25px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #fff;
+}
+
+/* Responsive Design (Optional) */
+@media (max-width: 768px) {
+    .content-box {
+        flex-direction: column; /* Stack text and buttons vertically on smaller screens */
+        align-items: center;
+        text-align: center;
+    }
+
+    .text-content {
+        margin-bottom: 20px;
+    }
+
+    .footer-links a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .footer-bottom-row {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
